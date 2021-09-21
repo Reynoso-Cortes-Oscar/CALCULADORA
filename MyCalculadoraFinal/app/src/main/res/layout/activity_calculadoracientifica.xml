@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232223"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#96F8CD"
+        android:gravity="bottom|right"
+        android:text=""
+        android:textColor="#0000ff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@+id/tvDisplay"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <Button
+            android:id="@+id/btnOFF"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="off" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="RDN" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="←" />
+
+        <Button
+            android:id="@+id/btnAC"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="AC" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btnFactorial"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="!" />
+
+        <Button
+            android:id="@+id/btnPOW"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="^" />
+
+        <Button
+            android:id="@+id/btnPOW2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="^2" />
+
+        <Button
+            android:id="@+id/btnPOW3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="^3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btnSIN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="sin()" />
+
+        <Button
+            android:id="@+id/btnCOS"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="cos()" />
+
+        <Button
+            android:id="@+id/btnTAN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="18dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="tan()" />
+
+        <Button
+            android:id="@+id/btnSQRT"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="√" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:text="7"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnDIV"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="÷" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnMUL"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="×" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnSUM"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-30dp">
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="25dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btnRES"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/keyboard_btn"
+            android:textColor="#FF0000"
+            android:textSize="30dp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
+            android:text="-" />
+
+    </LinearLayout>
+
+</LinearLayout>
